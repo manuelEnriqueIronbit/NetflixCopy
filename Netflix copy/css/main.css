@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    /*overflow: hidden;*/
 }
 
 header{
@@ -21,7 +22,7 @@ header .logo{
 }
 
 
-/*Styles for the selection profile  ui*/
+/*Styles for the selection profile ui*/
 .select-user{
     display: flex;
     justify-content: center;
@@ -120,4 +121,15 @@ header .logo{
 
 header div{
     display: none;
+}
+
+/*End of styles for the selection profile ui*/
+
+/*Form admin profiles */
+
+
+
+form{
+    display: grid;
+    grid-template-columns: 20% 60% 20%; 
 }
