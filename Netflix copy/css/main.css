@@ -18,9 +18,7 @@ header nav a:not(.logo){
 header .logo{
     width: 110px;
     height: auto;
-    background-color: #141414;
 }
-
 
 /*Styles for the selection profile ui*/
 .select-user{
@@ -62,6 +60,7 @@ header .logo{
     position: relative;
     text-align: center;
     color: #808080;
+    text-decoration: none;
 }
 
 .select-user #users-list a:hover{
@@ -75,7 +74,7 @@ header .logo{
     max-width: 200px;
     min-height: 84px;
     min-width: 84px;
-    border: 3px solid rgba(128, 128, 128, 0.6) ;
+    border: 2px solid rgba(128, 128, 128, 0.6) ;
 }
 
 .select-user #users-list li.add-profile{
@@ -96,7 +95,7 @@ header .logo{
 }
 
 .select-user #users-list img:hover{
-    border: 3px solid #fff ;
+    border: 2px solid #fff ;
 }
 
 .select-user .admin-profiles{
@@ -125,11 +124,107 @@ header div{
 
 /*End of styles for the selection profile ui*/
 
-/*Form admin profiles */
+/*Form profiles */
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #141414;
+    padding: 0 4%;
+}
+
+.form h2{
+    width: 100%;
+    color: #fff;
+    font-size: 3.5vw;
+    margin: 0;
+}
+
+.form h2, .form p, .form form{
+    max-width: 580px;
+    text-align: left;
+    width: 100%;
+}
+
+.form form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form form img{
+    height: 6vw;
+    width: 6vw;
+    border: none;
+}
+
+.form form .fields{
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 2em 0;
+}
+
+.form form .fields input.name{
+    width: 60%;
+    padding: .2em .6em;
+    color: #fff;
+    height: 2em;
+    background: #666;
+    border: 1px solid transparent;
+}
+
+.form form .fields .kids{
+    color: #fff;
+}
+
+.form form button{
+    display: inline-block;
+    margin-right: 20px;
+    background: #fff;
+    color: #000;
+    border: 1px solid #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: .5em 1.5em;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-size: .9em;
+}
+
+.form form button:hover{
+    background: #cc0000;
+    border: 1px solid #cc0000;
+    color: #fff;
+}
+
+.form form .buttons{
+    margin: 2em 0 1em 0;
+    text-align: left;
+    width: 100%;
+}
+
+/*Form add profile*/
 
 
+
+.form p{
+    color: #808080;
+    font-size: 1.3vw;
+}
+
+/*Form edit profile*/
 
 form{
     display: grid;
     grid-template-columns: 20% 60% 20%; 
 }
+
