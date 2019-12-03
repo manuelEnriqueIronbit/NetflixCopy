@@ -186,7 +186,7 @@ header div{
     color: #fff;
 }
 
-.form form button{
+.form form a{
     display: inline-block;
     margin-right: 20px;
     background: #fff;
@@ -198,9 +198,10 @@ header div{
     letter-spacing: 2px;
     cursor: pointer;
     font-size: .9em;
+    text-decoration: none;
 }
 
-.form form button:hover{
+.form form a:hover{
     background: #cc0000;
     border: 1px solid #cc0000;
     color: #fff;
